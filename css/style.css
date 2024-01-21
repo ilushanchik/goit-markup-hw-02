@@ -1,7 +1,7 @@
 body {
-    font-family:"Roboto",
-        sans-serif
-    color:#434455 ;
+    font-family: "Roboto",
+        sans-serif;
+    color: #434455;
     background-color: #fff;
 }
 
@@ -33,10 +33,9 @@ a {
 .header-nav {}
 
 .header-logo {
-        
-        color: var(--IRIS, #4D5AE5)
-        font-family: "Raleway",
-            sans-serif;
+
+        font-family: "Raleway", sans-serif;
+        color: var(--IRIS, #4d5ae5)       
         font-size: 18px;
         font-weight: 700;
         line-height: 1.17;
@@ -170,7 +169,9 @@ address {
     background-color: #FFFFFF
 }
 
-.team-item {}
+.team-item {
+    background-color: #FFFFFF
+}
 
 .team-picture {
     background: url(<path-to-image>), lightgray -97.034px -0.927px / 181.897% 251.37% no-repeat;
