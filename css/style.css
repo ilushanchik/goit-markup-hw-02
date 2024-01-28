@@ -29,6 +29,20 @@ img {
     display: block;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* button {
     display: block;
 } */
@@ -41,7 +55,9 @@ img {
 
 /* ========HEADER========= */
 
-.header {}
+.header {
+    border-bottom: 1px solid #e7e9fc
+}
 
 .header-container {
      display: flex;
@@ -54,7 +70,7 @@ img {
 }
 
 .header-logo {
-
+margin-right: 76px
         font-family: "Raleway", sans-serif;            
         font-size: 18px;
         font-weight: 700;
@@ -136,8 +152,8 @@ address {
 
 .hero-title {
      display: flex;
-     max-width: 100%;
-     width: 496px;
+     /* max-width: 100%; */
+     max-width: 496px;
      margin: 0 auto; 
     color: var(--WHITE, #FFF);
     text-align: center;
@@ -152,7 +168,7 @@ address {
      display: flex; 
      padding: 16px 32px;
      margin: 0 auto; 
-      margin-top: 48px;
+    margin-top: 48px;
     color: var(--WHITE, #FFF);
     font-size: 16px;
     font-family:"Roboto",
@@ -164,8 +180,12 @@ address {
     background: var(--IRIS, #4D5AE5);
      display: block;  
     text-align: center;
+    border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px
+    height: 56px
+    
 }
 
 .hero-btn:hover, .hero-btn:focus {
@@ -177,11 +197,12 @@ address {
 /* ========FEATURES======== */
 
 .features-container {
-    margin-top: 120px;
+    /* margin-top: 120px; */
 }
 
 .features {
     background-color: #FFF;
+    padding: 120px 0
 }
 
 .features-list {
@@ -191,7 +212,7 @@ address {
 }
 
 .features-item {
-   flex-basis: calc((100% - 3 * 24) / 4);
+flex-basis: calc((100% - 72px) / 4)
 }
 
 .features-title {
@@ -201,6 +222,7 @@ address {
             font-weight: 500;
             line-height: 1.2;
             letter-spacing: 0.02em; 
+            margin-bottom: 8px;
         }
 
 .features-text {
@@ -245,7 +267,8 @@ address {
 
 .team-item {
     max-width: 100%;
-    flex-basis: calc((100% - 3 * 24) / 4); 
+    flex-basis: calc((100% - 72px) / 4); 
+    border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF
 }
 
@@ -254,8 +277,9 @@ address {
 }
 
 .team-cards-container {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  /* margin-top: 32px;
+  margin-bottom: 32px; */
+padding: 32px 0
 }
 
 .team-subtitle {
@@ -283,9 +307,11 @@ address {
 
 .portfolio-container {
     /* margin-top: 120px; */
+    border: 1px solid #e7e9fc
 }
 
 .portfolio {
+    padding: 120px 0 120px 0;
     background: #FFF;
 }
 
@@ -306,24 +332,25 @@ address {
 }
 
 .portfolio-item {
-    flex-basis: calc((100% - 3 * 24) / 3);
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .portfolio-picture {background: url(<path-to-image>), lightgray -25.026px 0px / 125% 100% no-repeat;}
 
 .portfolio-cards-container {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 32px;
+    padding: 32px 16px
 }
 
 .portfolio-subtitle {
     margin-top: 32px;
+    margin-bottom: 8px;
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+}
+    
 
 .portfolio-text {
     color: var(--SLATE, #434455);
@@ -345,6 +372,7 @@ address {
 
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
+    padding: 100px 0;
 }
 
 .footer-content-container {
@@ -353,6 +381,7 @@ address {
 }
 
 .footer-link {
+    display: inline-block;
     color: var(--IRIS, #4D5AE5);
     font-family: "Raleway",
         sans-serif;
