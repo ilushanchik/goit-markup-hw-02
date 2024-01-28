@@ -70,7 +70,6 @@ img {
 }
 
 .header-logo {
-margin-right: 76px
         font-family: "Raleway", sans-serif;            
         font-size: 18px;
         font-weight: 700;
@@ -78,6 +77,7 @@ margin-right: 76px
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--IRIS, #4d5ae5);
+        margin-right: 76px
 }
 
 .header-logo-second {
@@ -183,9 +183,7 @@ address {
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    min-width: 169px
-    height: 56px
-    
+    min-width: 169px  
 }
 
 .hero-btn:hover, .hero-btn:focus {
@@ -306,7 +304,6 @@ padding: 32px 0
 /* ========OUR PORTFOLIO======== */
 
 .portfolio-container {
-    /* margin-top: 120px; */
     border: 1px solid #e7e9fc
 }
 
@@ -332,13 +329,13 @@ padding: 32px 0
 }
 
 .portfolio-item {
-    flex-basis: calc((100% - 48px) / 3);
+    flex-basis:calc((100% - 48px) / 3);
 }
 
 .portfolio-picture {background: url(<path-to-image>), lightgray -25.026px 0px / 125% 100% no-repeat;}
 
 .portfolio-cards-container {
-    padding: 32px 16px
+    padding: 32px 16px  
 }
 
 .portfolio-subtitle {
