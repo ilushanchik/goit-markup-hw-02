@@ -6,18 +6,49 @@ body {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none;  
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0; 
 }
 
 a {
   text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+
+p, h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* button {
+    display: block;
+} */
+
+.container {
+ width: 100%;
+ max-width: 1158px;
+ margin: 0 auto;
+ display: flex;
 }
 
 /* ========HEADER========= */
 
 .header {}
 
-.header-nav {}
+.header-container {
+     display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center; 
+    flex-grow: 1;
+}
 
 .header-logo {
 
@@ -35,9 +66,16 @@ a {
     color: var(--NAVY-BLUE, #2E2F42);
 }
 
-.header-list {}
+.header-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
-.header-item {}
+.header-item {
+}
 
 .header-link {
         color: var(--NAVY-BLUE, #2E2F42);
@@ -53,9 +91,15 @@ a {
 address {
     font-style: normal;
 }
-.header-address {}
+.header-address {
+}
 
-.header-address-list {}
+.header-address-list {
+    display: flex;
+    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 .header-address-item {}
 
@@ -77,21 +121,36 @@ address {
 
 /* ========HERO======== */
 
+.hero-container {
+ display: flex;
+ flex-direction: column;
+}
+
 .hero {
     background-color: var(--NAVY-BLUE, #2E2F42);
+      padding: 188px 472px 0 472px;
 }
 
 .hero-title {
+     display: flex;
+     max-width: 100%;
+     width: 496px;
+     margin: 0 auto; 
     color: var(--WHITE, #FFF);
     text-align: center;
     font-family: Roboto;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 0.02em;  
+    letter-spacing: 0.02em;
 }
 
 .hero-btn {
+     display: flex; 
+     padding: 16px 32px;
+     margin: 0 auto; 
+      margin-top: 48px;
+      margin-bottom: 188px;
     color: var(--WHITE, #FFF);
     font-size: 16px;
     font-family:"Roboto",
@@ -101,6 +160,10 @@ address {
     letter-spacing: 0.04em;
     cursor: pointer;
     background: var(--IRIS, #4D5AE5);
+     display: block;  
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover, .hero-btn:focus {
@@ -111,13 +174,23 @@ address {
 
 /* ========FEATURES======== */
 
+.features-container {
+    margin-top: 120px;
+}
+
 .features {
     background-color: #FFF;
 }
 
-.features-list {}
+.features-list {
+    display: flex;
+    gap: 24px;
 
-.features-item {}
+}
+
+.features-item {
+   flex-basis: calc((100% - 3 * 24) / 4);
+}
 
 .features-title {
             color: var(--NAVY-BLUE, #2E2F42);
@@ -141,13 +214,20 @@ address {
 
 /* ========OUR TEAM======== */
 
+.team-container {
+    margin-top: 120px;
+    display: flex;  
+}
+
 .team {
     background: var(--CLOUD, #F4F4FD);
 }
 
 .team-title {
-    color: var(--NAVY-BLUE, #2E2F42);
-    text-align: center;   
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    color: var(--NAVY-BLUE, #2E2F42);  
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -156,7 +236,8 @@ address {
 }
 
 .team-list {
-    background-color: #FFFFFF
+    display: block;
+    background-color: #FFFFFF 
 }
 
 .team-item {
