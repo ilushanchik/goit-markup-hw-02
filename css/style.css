@@ -94,6 +94,7 @@ img {
 }
 
 .header-item {
+    padding: 24px 0;
 }
 
 .header-link {
@@ -304,6 +305,7 @@ padding: 32px 0
 /* ========OUR PORTFOLIO======== */
 
 .portfolio-container {
+    border-top: none;
     border: 1px solid #e7e9fc
 }
 
