@@ -90,7 +90,7 @@ img {
     display: flex;
     gap: 40px;
     margin-left: 76px;
-    padding: 24px 0
+    padding: 24px 0;
 }
 
 .header-item {
@@ -335,6 +335,7 @@ padding: 32px 0
 .portfolio-picture {background: url(<path-to-image>), lightgray -25.026px 0px / 125% 100% no-repeat;}
 
 .portfolio-cards-container {
+    border-top: none;
     border: 1px solid #e7e9fc;
     padding: 32px 16px 
 }
