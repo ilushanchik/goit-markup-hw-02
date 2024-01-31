@@ -93,7 +93,8 @@ img {
 }
 
 .header-item {
-    padding: 24px 0; 
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-link {
@@ -115,12 +116,11 @@ address {
 
 .header-address-list {
     display: flex;
-    gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    gap: 40px; 
 }
 
-.header-address-item {}
+.header-address-item {padding-top: 24px;
+    padding-bottom: 24px;}
 
 .header-address-link {
     color: var(--SLATE, #434455);
@@ -335,9 +335,10 @@ padding: 32px 0
 
 .portfolio-picture {background: url(<path-to-image>), lightgray -25.026px 0px / 125% 100% no-repeat;}
 
-.portfolio-cards-container {   
+.portfolio-cards-container {  
+    border-top: none;
     border: 1px solid #e7e9fc;
-    padding: 32px 16px 
+    padding: 32px 16px;
 }
 
 .portfolio-subtitle {
