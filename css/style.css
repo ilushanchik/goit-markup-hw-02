@@ -94,7 +94,7 @@ img {
 }
 
 .header-item {
-    padding: 24px 0;
+    
 }
 
 .header-link {
@@ -331,13 +331,12 @@ padding: 32px 0
 }
 
 .portfolio-item {
-    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-picture {background: url(<path-to-image>), lightgray -25.026px 0px / 125% 100% no-repeat;}
 
 .portfolio-cards-container {
-    border-top: none;
+    width: calc((100% - 48px) / 3);
     border: 1px solid #e7e9fc;
     padding: 32px 16px 
 }
@@ -376,10 +375,6 @@ padding: 32px 0
     padding: 100px 0;
 }
 
-.footer-content-container {
-   padding-top: 101.5px;
-   padding-bottom: 100px;
-}
 
 .footer-link {
     display: inline-block;
