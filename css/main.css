@@ -1,20 +1,7 @@
-@import 'common.css';
-@import 'features.css';
-@import 'footer.css';
-@import 'header.css';
-@import 'hero.css';
-@import 'portfolio.css';
-@import 'team.css';
-
-body {
-  background-color: #fff;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  font-style: normal;
-}
-li {
-  list-style-type: none;
-}
+@import "./common.css";
+@import "./features.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./portfolio.css";
+@import "./team.css";
