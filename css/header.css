@@ -38,3 +38,6 @@
 .header-list-contact a:hover {
   color: #404bbf;
 }
+.header-list-contact a:focus {
+  color: #404bbf;
+}
