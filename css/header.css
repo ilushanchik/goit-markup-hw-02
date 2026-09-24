@@ -26,6 +26,9 @@
 .header-list-nav a:hover {
   color: #404bbf;
 }
+.header-list-nav a:focus {
+  color: #404bbf;
+}
 
 .header-list-contact a {
   font-family: "Roboto", sans-serif;

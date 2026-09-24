@@ -1,7 +1,8 @@
 .hero-container {
   background: #2e2f42;
 }
-.hero-container h1 {
+
+.hero-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 56px;
@@ -21,6 +22,7 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  cursor: pointer;
 }
 
 .hero-btn:hover {
